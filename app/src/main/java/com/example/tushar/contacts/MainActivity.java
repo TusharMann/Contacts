@@ -7,9 +7,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -43,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
             contact c=new contact();
             c.setName(name);
+            Log.i("Query",c.name);
             c.setNumber(number);
+            Log.i("Query",c.number);
             contactlist.add(c);
 
 
